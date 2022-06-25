@@ -17,6 +17,8 @@ body {
 .container-home {
 	max-width: 1710px;
 	margin: 150px;
+	position: absolute;
+	z-index: -10;
 }
 
 /* ---------- CARDS HOME START ------------- */
@@ -24,6 +26,8 @@ body {
 .container-color-cards-home {
 	border: 1px solid red;
 	position: absolute;
+	width: 830px;
+	height: 830px;
 }
 
 .card-orange {
@@ -37,6 +41,8 @@ body {
 	background-color: var(--yellow);
 	position: relative;
 	z-index: 1;
+	left: 20px;
+	top: -810px;
 }
 
 .card-yellow,
@@ -49,4 +55,7 @@ body {
 
 .title-home {
 	font-size: 190px;
+	position: relative;
+	z-index: 10;
+	right: 0;
 }
