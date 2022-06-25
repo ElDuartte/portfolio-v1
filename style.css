@@ -1,0 +1,52 @@
+:root {
+	--white: #ffffff;
+	--black: #2c2c2c;
+	--yellow: #dced31;
+	--orange: #f46036;
+	--green: #5ecc6c;
+	--text: "Arvo", serif;
+	--title: "Bungee Shade", cursive;
+}
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: var(--title);
+}
+
+.container-home {
+	max-width: 1710px;
+	margin: 150px;
+}
+
+/* ---------- CARDS HOME START ------------- */
+
+.container-color-cards-home {
+	border: 1px solid red;
+	position: absolute;
+}
+
+.card-orange {
+	background-color: var(--orange);
+	position: relative;
+	top: 20px;
+	z-index: 0;
+}
+
+.card-yellow {
+	background-color: var(--yellow);
+	position: relative;
+	z-index: 1;
+}
+
+.card-yellow,
+.card-orange {
+	width: 810px;
+	height: 810px;
+}
+
+/* ---------- CARDS HOME END --------------- */
+
+.title-home {
+	font-size: 190px;
+}
