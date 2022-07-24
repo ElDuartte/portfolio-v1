@@ -12,6 +12,8 @@ body {
 	background-color: var(--black);
 	color: var(--white);
 	font-family: var(--title);
+	height: 100vh;
+	overflow: none;
 }
 
 .container-home {
@@ -58,4 +60,9 @@ body {
 	position: relative;
 	z-index: 10;
 	right: 0;
+}
+
+.description-home{
+	color: red;
+	z-index: 10;
 }
