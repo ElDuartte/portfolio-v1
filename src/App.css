@@ -28,3 +28,14 @@
 .link {
   padding-right: 30px;
 }
+
+/* si es menos de 950 quitar el avatar y hacer el texto 100% */
+@media screen and (max-width: 1030px) {
+  .container,
+  .container-text {
+    width: 90%;
+  }
+  .avatar {
+    display: none;
+  }
+}
