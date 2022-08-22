@@ -25,6 +25,11 @@
 .container-links {
 }
 
+.container-switch {
+  margin: 30px auto;
+  width: 20vw;
+}
+
 .link {
   padding-right: 30px;
 }
@@ -38,6 +43,9 @@
   .avatar {
     /* display: none; */
     width: 10%;
+  }
+  .container-switch {
+    width: 20vw;
   }
 }
 
@@ -56,5 +64,21 @@
   }
   .container-links {
     margin-bottom: 15px;
+  }
+  .container-switch {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container-switch {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-switch {
+    max-width: 60vw;
+    width: 100%;
   }
 }

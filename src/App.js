@@ -1,47 +1,67 @@
+import React, { useState } from "react";
 import "./App.css";
-import data from "./lenguage.json";
-
+import data from "./lang.json";
 import avatar from "./img/avatar.png";
+import Switch from "./components/Switch";
 
 function App() {
-  // let lang = true;
-  // let langJson = "";
-  // if (lang === true) {
-  //   langJson = "en";
-  // }
+  const [isToggled, setIsToggled] = useState(false);
+  let lang;
+  if (!isToggled) {
+    lang = data.en;
+  } else {
+    lang = data.es;
+  }
+
   return (
     //<!-- Balloon 'is-dark'  -->
     <div className="container">
       <section
-        class="nes-container is-dark with-title is-centered"
+        className="nes-container is-dark with-title is-centered"
         id="text-section"
       >
-        <p class="title" style={{ fontSize: "30px" }}>
-          {data.es.Title}
+        <p className="title" style={{ fontSize: "30px" }}>
+          {/* {data.es.Title} */}
+          {lang.Title}
         </p>
 
-        <section class="message-list container-content">
+        <section className="message-list container-content">
           <div className="container-text">
-            <section class="message -right">
+            <section className="message -right">
               {/*Balloon*/}
-              <div class="nes-balloon from-right is-dark" id="text-section">
-                <p>{data.es.Text}</p>
+              <div className="nes-balloon from-right is-dark" id="text-section">
+                <p>{lang.Text}</p>
                 <p style={{ fontSize: "30px" }}>&#128071;&#128071;</p>
               </div>
               {/* avatar*/}
             </section>
             <div className="container-links">
               <a href="https://github.com/ElDuartte">
-                <i class="link nes-icon github is-large"></i>
+                <i className="link nes-icon github is-large"></i>
               </a>
               <a href="https://www.linkedin.com/in/juanfelipeduartemontanez/">
-                <i class="nes-icon linkedin is-large"></i>
+                <i className="nes-icon linkedin is-large"></i>
               </a>
             </div>
           </div>
           <img src={avatar} alt="avatar" className="avatar" />
         </section>
       </section>
+      <div
+        className="nes-container is-dark with-title is-centered container-switch"
+        style={{ margin: "30px auto" }}
+      >
+        <p className="title" style={{ fontSize: "30px" }}>
+          &#127468;&#127463; &#127466;&#127480;
+        </p>
+        <section className="switchLang">
+          <Switch
+            rounded={true}
+            isToggled={isToggled}
+            onToggle={() => setIsToggled(!isToggled)}
+          />
+        </section>
+      </div>
     </div>
   );
 }
