@@ -33,9 +33,28 @@
 @media screen and (max-width: 1030px) {
   .container,
   .container-text {
-    width: 90%;
+    width: 95%;
+  }
+  .avatar {
+    /* display: none; */
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container,
+  .container-text {
+    width: 100%;
+  }
+  #text-section {
+    /* background-color: red; */
+    padding: 0;
   }
   .avatar {
     display: none;
+    /* width: 10%; */
+  }
+  .container-links {
+    margin-bottom: 15px;
   }
 }

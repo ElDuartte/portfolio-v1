@@ -12,7 +12,10 @@ function App() {
   return (
     //<!-- Balloon 'is-dark'  -->
     <div className="container">
-      <section class="nes-container is-dark with-title is-centered">
+      <section
+        class="nes-container is-dark with-title is-centered"
+        id="text-section"
+      >
         <p class="title" style={{ fontSize: "30px" }}>
           {data.es.Title}
         </p>
@@ -21,7 +24,7 @@ function App() {
           <div className="container-text">
             <section class="message -right">
               {/*Balloon*/}
-              <div class="nes-balloon from-right is-dark">
+              <div class="nes-balloon from-right is-dark" id="text-section">
                 <p>{data.es.Text}</p>
                 <p style={{ fontSize: "30px" }}>&#128071;&#128071;</p>
               </div>
