@@ -1,84 +1,38 @@
-.container {
-  width: 60vw;
-  margin: 50px auto;
+.App {
+  text-align: center;
 }
 
-.container-content {
-  display: flex;
-  position: relative;
-  padding: 0;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.container-text {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.avatar {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30%;
+.App-link {
+  color: #61dafb;
 }
 
-.container-links {
-}
-
-.container-switch {
-  margin: 30px auto;
-  width: 20vw;
-}
-
-.link {
-  padding-right: 30px;
-}
-
-/* si es menos de 950 quitar el avatar y hacer el texto 100% */
-@media screen and (max-width: 1030px) {
-  .container,
-  .container-text {
-    width: 95%;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  .avatar {
-    /* display: none; */
-    width: 10%;
-  }
-  .container-switch {
-    width: 20vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container,
-  .container-text {
-    width: 100%;
-  }
-  #text-section {
-    /* background-color: red; */
-    padding: 0;
-  }
-  .avatar {
-    display: none;
-    /* width: 10%; */
-  }
-  .container-links {
-    margin-bottom: 15px;
-  }
-  .container-switch {
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .container-switch {
-    width: 30vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container-switch {
-    max-width: 60vw;
-    width: 100%;
+  to {
+    transform: rotate(360deg);
   }
 }
