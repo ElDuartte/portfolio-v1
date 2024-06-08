@@ -2,6 +2,7 @@
 
 :root {
   --font-title: 3.5rem;
+  --font-sub-title: 2.5rem;
   --font-text: 1.6rem;
   --background-color: #272727;
   font-family: "Arvo", serif;
@@ -11,6 +12,10 @@
 
 h1 {
   font-size: var(--font-title);
+}
+
+h2 {
+  font-size: var(--font-sub-title);
 }
 
 p {
